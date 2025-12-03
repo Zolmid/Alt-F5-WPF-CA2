@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact us about AI - Enquiry Form">
+  <title>Enquiry | Artificial Intelligence</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div data-component="ambient-background"></div>
+
+  <main class="pb-dock">
+  <header class="page-header">
+      <h1 class="page-header__title anim-fade-up">
+        <span class="text-gradient">Get in Touch</span>
+      </h1>
+      <p class="page-header__description anim-fade-up anim-delay-1">
+        Join the AI revolution. Tell us about yourself and your interests.
+      </p>
+    </header>
+
+  <section class="section">
+      <div class="container container--narrow">
+        <div class="form-modal anim-scale-in">
+          <form id="enquiryForm" novalidate>
+            
+            <!-- Personal Information -->
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name *</label>
+              <input 
+                type="text" 
+                id="fullName" 
+                name="fullName" 
+                class="form-input" 
+                placeholder="Enter your full name"
+                required
+              >
+              <span class="form-error">Please enter your full name</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="you@example.com"
+                required
+              >
+              <span class="form-error">Please enter a valid email address</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                class="form-input" 
+                placeholder="+1 (555) 000-0000"
+              >
+            </div>
+
+            <!-- Identity Selection -->
+            <div class="form-group">
+              <label class="form-label" for="identity">Your Role *</label>
+              <select id="identity" name="identity" class="form-select" required>
+                <option value="">Select your role</option>
+                <option value="Student">Student</option>
+                <option value="Developer">Developer</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Investor">Investor</option>
+                <option value="Entrepreneur">Entrepreneur</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="form-error">Please select your role</span>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+              <label class="form-label">Gender</label>
+              <div class="form-radio-group">
+                <label class="form-radio">
+                  <input type="radio" name="gender" value="Male">
+                  <span>Male</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="gender" value="Female">
+                  <span>Female</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="gender" value="Non-binary">
+                  <span>Non-binary</span>
+                </label>
+                <label class="form-radio">
+                  <input type="radio" name="gender" value="Prefer not to say">
+                  <span>Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="form-group">
+              <label class="form-label">AI Interests *</label>
+              <div class="form-checkbox-group">
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="machine-learning">
+                  <span>Machine Learning</span>
+                </label>
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="nlp">
+                  <span>NLP</span>
+                </label>
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="computer-vision">
+                  <span>Computer Vision</span>
+                </label>
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="robotics">
+                  <span>Robotics</span>
+                </label>
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="generative-ai">
+                  <span>Generative AI</span>
+                </label>
+                <label class="form-checkbox">
+                  <input type="checkbox" name="interests" value="ethics">
+                  <span>AI Ethics</span>
+                </label>
+              </div>
+              <span class="form-error">Please select at least one interest</span>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message *</label>
+              <textarea 
+                id="message" 
+                name="message" 
+                class="form-textarea" 
+                placeholder="Tell us about your AI journey, questions, or ideas..."
+                required
+              ></textarea>
+              <span class="form-error">Please enter your message</span>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="form-group">
+              <label class="form-checkbox">
+                <input type="checkbox" name="newsletter" value="yes">
+                <span>Subscribe to our AI newsletter for updates and insights</span>
+              </label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: var(--space-md);">
+              Submit Enquiry
+            </button>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  <section class="section">
+      <div class="container">
+        <div class="grid-system grid-system--3">
+          
+          <div class="feature-item anim-fade-up text-center">
+            <div class="feature-icon" data-icon="mail" style="justify-content: center;"></div>
+            <h3 class="feature-title">Email</h3>
+            <p class="feature-text">hello@aivision.dev</p>
+          </div>
+
+          <div class="feature-item anim-fade-up anim-delay-1 text-center">
+            <div class="feature-icon" data-icon="map-pin" style="justify-content: center;"></div>
+            <h3 class="feature-title">Location</h3>
+            <p class="feature-text">Singapore</p>
+          </div>
+
+          <div class="feature-item anim-fade-up anim-delay-2 text-center">
+            <div class="feature-icon" data-icon="clock" style="justify-content: center;"></div>
+            <h3 class="feature-title">Response Time</h3>
+            <p class="feature-text">Within 24 hours</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-component="footer"></div>
+
+  <div data-component="nav-dock"></div>
+
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/ambient.js"></script>
+
+  <script>
+    const FormValidator = {
+      form: null,
+      errors: [],
+
+      init(formId) {
+        this.form = document.getElementById(formId);
+        this.errors = [];
+        this.bindEvents();
+        return this;
+      },
+
+      bindEvents() {
+        if (!this.form) return;
+
+        this.form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          if (this.validate()) {
+            const formData = this.extract();
+            const params = new URLSearchParams({
+              name: formData.fullName,
+              role: formData.identity,
+              gender: formData.gender
+            });
+            window.location.href = `success.html?${params.toString()}`;
+          }
+        });
+
+        const inputs = this.form.querySelectorAll('.form-input, .form-select, .form-textarea');
+        inputs.forEach(input => {
+          input.addEventListener('blur', () => this.validateField(input));
+          input.addEventListener('input', () => this.clearFieldError(input));
+        });
+
+        const identitySelect = this.form.querySelector('#identity');
+        if (identitySelect) {
+          identitySelect.addEventListener('change', (e) => {
+            this.onRoleChange(e.target.value);
+          });
+        }
+      },
+
+      validate() {
+        this.errors = [];
+        let isValid = true;
+
+  const fullName = this.form.querySelector('#fullName');
+  const email = this.form.querySelector('#email');
+  const identity = this.form.querySelector('#identity');
+  const message = this.form.querySelector('#message');
+
+        if (!fullName.value.trim()) {
+          this.setFieldError(fullName);
+          isValid = false;
+        } else {
+          this.clearFieldError(fullName);
+        }
+        if (!this.isValidEmail(email.value)) {
+          this.setFieldError(email);
+          isValid = false;
+        } else {
+          this.clearFieldError(email);
+        }
+        if (!identity.value) {
+          this.setFieldError(identity);
+          isValid = false;
+        } else {
+          this.clearFieldError(identity);
+        }
+        const interests = this.form.querySelectorAll('input[name="interests"]:checked');
+        const interestsGroup = this.form.querySelector('input[name="interests"]').closest('.form-group');
+        if (interests.length === 0) {
+          interestsGroup.classList.add('has-error');
+          isValid = false;
+        } else {
+          interestsGroup.classList.remove('has-error');
+        }
+        if (!message.value.trim()) {
+          this.setFieldError(message);
+          isValid = false;
+        } else {
+          this.clearFieldError(message);
+        }
+
+        return isValid;
+      },
+
+      validateField(field) {
+        const id = field.id;
+        let isValid = true;
+
+        switch (id) {
+          case 'fullName':
+            isValid = field.value.trim().length > 0;
+            break;
+          case 'email':
+            isValid = this.isValidEmail(field.value);
+            break;
+          case 'identity':
+            isValid = field.value.length > 0;
+            break;
+          case 'message':
+            isValid = field.value.trim().length > 0;
+            break;
+        }
+
+        if (!isValid) {
+          this.setFieldError(field);
+        } else {
+          this.clearFieldError(field);
+        }
+
+        return isValid;
+      },
+
+      isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      },
+
+      setFieldError(field) {
+        const group = field.closest('.form-group');
+        if (group) {
+          group.classList.add('has-error');
+        }
+      },
+
+      clearFieldError(field) {
+        const group = field.closest('.form-group');
+        if (group) {
+          group.classList.remove('has-error');
+        }
+      },
+      extract() {
+        const formData = new FormData(this.form);
+        const data = {};
+
+        data.fullName = formData.get('fullName');
+        data.email = formData.get('email');
+        data.phone = formData.get('phone') || '';
+        data.identity = formData.get('identity');
+        data.gender = formData.get('gender') || '';
+        data.message = formData.get('message');
+        data.newsletter = formData.get('newsletter') === 'yes';
+
+        data.interests = [];
+        const interests = this.form.querySelectorAll('input[name="interests"]:checked');
+        interests.forEach(interest => {
+          data.interests.push(interest.value);
+        });
+
+        return data;
+      },
+
+      onRoleChange(role) {
+        console.log(`Role selected: ${role}`);
+      },
+
+      handleRoleBasedFeedback(role) {
+        let message = '';
+
+        switch (role) {
+          case 'Developer':
+            message = `🚀 Welcome, Developer!\n\n` +
+              `console.log("Hello, AI Enthusiast!");\n\n` +
+              `We're excited to connect with fellow builders.\n` +
+              `Your expertise in code meets our passion for AI.\n\n` +
+              `// Let's build the future together\n` +
+              `const future = await collaborate(you, AI);`;
+            break;
+
+          case 'Investor':
+            message = `💼 Greetings, Visionary Investor!\n\n` +
+              `The AI market is projected to reach $1.8T by 2030.\n\n` +
+              `Key Metrics:\n` +
+              `• 42% CAGR in Enterprise AI\n` +
+              `• 85% of executives prioritizing AI investment\n` +
+              `• First-mover advantage in emerging applications\n\n` +
+              `We look forward to discussing partnership opportunities.`;
+            break;
+
+          case 'Researcher':
+            message = `🔬 Welcome, Researcher!\n\n` +
+              `Your work advances the frontier of human knowledge.\n` +
+              `We're committed to supporting academic collaboration\n` +
+              `and open research initiatives.\n\n` +
+              `Let's explore the unknown together.`;
+            break;
+
+          case 'Student':
+            message = `📚 Welcome, Future AI Leader!\n\n` +
+              `Your journey into AI starts here.\n` +
+              `We offer resources, mentorship, and community\n` +
+              `to help you grow and succeed.\n\n` +
+              `The future belongs to curious minds like yours!`;
+            break;
+
+          case 'Entrepreneur':
+            message = `🌟 Welcome, Innovator!\n\n` +
+              `Turning AI vision into reality requires bold leaders.\n` +
+              `We're here to support your journey from\n` +
+              `concept to launch to scale.\n\n` +
+              `Let's disrupt the status quo together!`;
+            break;
+
+          default:
+            message = `✨ Thank you for your interest in AI!\n\n` +
+              `We've received your enquiry and will\n` +
+              `get back to you within 24 hours.\n\n` +
+              `Welcome to the AI revolution!`;
+        }
+
+        alert(message);
+      }
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+      FormValidator.init('enquiryForm');
+    });
+  </script>
+</body>
+</html>
